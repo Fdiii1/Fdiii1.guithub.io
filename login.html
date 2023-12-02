@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang=" en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-ua" content="IE">
+    <meta name="viewport" content=" width= device-width,initial-scale =1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="./asset/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <div id="bth"><button  class="btnLogin-Popup" onclick="() => btnLogin()"><a href="bth"></a> Login</button></div>
+    </header>
+    <div class="wrapper active">
+        <span class="icon-close"><i class='bx bxs-tag-x'></i></span>
+        <div id="login" class="form-box ">
+
+            <h2>đăng nhập</h2>
+            <form action="">
+
+                <div class="input-box">
+                    <i class='bx bx-envelope'></i>
+                    <input type="email" required>
+                    <label>email</label>
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password" required>
+                    <label>password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">lưu mật khẩu</label>
+                    <a href="#">quên mật khẩu?</a>
+                </div>
+                <button type="submit" class="btn" onclick="() => login()"> Đăng nhập</button>
+
+                <div class="login-gister">
+                    <div class="auth">
+                        <span class="text">chưa có tài khoản</span>
+                        <a href="#signup" class="th">đăng kí</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <div id="signup" class="form-box loginup">
+
+            <h2>đăng kí</h2>
+            <form action="">
+                <div class="input-box">
+                    <i class='bx bxs-user'></i>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <i class='bx bx-envelope'></i>
+                    <input type="email" required>
+                    <label>email</label>
+                </div>
+                <div class="input-box">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password" required>
+                    <label>password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">tôi đồng ý với điều khoản</label>
+
+                </div>
+                <button type="submit" class="btn" onclick="() => register()">Đăng kí</button>
+
+                <div class="login-gister">
+                    <div class="auth">
+                        <span class="text">Đã đăng kí</span>
+                        <a href="#login" class="th">Đăng nhập</a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
